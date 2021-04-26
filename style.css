@@ -1,0 +1,185 @@
+
+.header{}
+.header ul{
+  text-align: center;
+  margin-top: 10px;
+
+}
+.header ul li {
+  display: inline-block;
+  background-color: #48dbfb;
+  padding: 9px;
+  margin: 5px;
+  position: relative;
+  z-index: 1;
+
+}
+.header ul li a{
+  font-size: 20px;
+text-decoration: none;
+  color: black;
+  font-weight: bold;
+  
+
+}
+.header ul li::before {
+  content: "";
+  position: absolute;
+  top:48px;
+  left: 0;
+  height: 10%;
+  width: 0;
+  background-color: rgb(0, 0, 0);
+  z-index: -1;
+  transition: .4s;
+}
+
+.header ul li:hover{
+  background-color: white;
+}
+
+.header ul li a:hover{
+  color: aqua;
+}
+.header ul li:hover::before{
+  width: 100%;
+ 
+
+}
+
+/* banner section */
+.banner{
+  background-color: #48dbfb;
+ padding: 150px;
+  margin-top: -15px;
+}
+
+ span{
+  background-color: white;
+  color: #d9d9da;
+  padding: 15px 30px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 25px;
+  position: relative;
+z-index: 1;
+
+}
+
+ span::before{
+ content: url(./android-logo.png);
+ font-size: 25px;
+ content: "";
+ position: absolute;
+ top: 0;
+left: 0;
+height: 100%;
+width: 0;
+background-color: rgb(0, 0, 0);
+border-radius: 10px;
+ z-index: -1;
+ transition: .3s;
+}
+
+span i{
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  background-color: aqua;
+}
+
+span:hover::before{
+  width: 100%;
+}
+
+
+.service{
+  margin-top: 0px;
+  text-align: center;
+  background-color:#f7f9ff ;
+  padding: 80px;
+
+}
+
+.service h1{
+
+}
+.service p{
+  font-size: 20px;
+  line-height: 35px;
+  color: #84776c;
+  margin-top: 30px;
+}
+
+.footer{
+  background-color: #2e2f31;
+  color: #ffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+
+.trans{
+  text-align: center;
+}
+
+.div1 {
+  background-color: black;
+  height: 137px;
+  width: 70px;
+  /* transform: rotate(56deg) translate(430px); */
+  color: #fff;
+  display: inline-block;
+  transform: rotate(  43deg);
+  transition: .3s;
+  
+}
+  
+
+
+.div2{
+  background-color: black; 
+  height: 70px; 
+  width: 137px;
+   /* transform: translateY(251px) translateX(608px) rotate( 90deg );
+    color: white; */
+    display: inline-block;
+    margin-left: 461px;
+    transition: .3s;
+}
+
+
+.div3{
+  background-color: black;
+  height: 137px;
+  width: 70px;
+  /* transform: rotate(-50deg) translateY(122px);
+  color: white;
+  margin-left: 965px */
+  display: inline-block;
+  margin-left: 30px;
+  margin-left: 418px;
+  transform: rotate(-43deg);
+  transition: .3s;
+
+}
+
+.div1:hover{
+  transform: rotate( 90deg);
+  background-color: aqua;
+
+}
+
+.div2:hover{
+  transform: scale(1.2);
+  background-color: aqua;
+}
+
+.div3:hover{
+  background-color: aqua;
+  transform: rotate(-90deg);
+}
